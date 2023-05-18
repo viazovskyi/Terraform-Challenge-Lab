@@ -16,3 +16,9 @@ variable "zone" {
   default     = "us-east1-c"
 }
 
+variable "bucket" {
+  description = "The ID of the bucket"
+  type        = string
+  default     = "XXXXXXXX"
+}
+
