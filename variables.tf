@@ -1,7 +1,7 @@
 variable "project_id" {
   description = "The ID of the project where this VPC will be created"
   type        = string
-  default     = "qwiklabs-gcp-02-73844a09450a"
+  default     = "qwiklabs-gcp-03-1ff3f3878dcf"
 }
 
 variable "region" {
@@ -19,6 +19,6 @@ variable "zone" {
 variable "bucket" {
   description = "The ID of the bucket"
   type        = string
-  default     = "XXXXXXXX"
+  default     = "tf-bucket-34044"
 }
 

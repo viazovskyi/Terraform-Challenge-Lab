@@ -16,7 +16,7 @@ module "storage" {
 module "network" {
   source  = "terraform-google-modules/network/google"
   version = "6.0.0"
-  network_name = "example-vpc"
+  network_name = "tf-vpc-453017"
   routing_mode = "GLOBAL"
   subnets = [
     {
@@ -35,7 +35,7 @@ module "network" {
 /*
 resource "google_compute_firewall" "tf-firewall" {
   name    = "firewall-tcp80-ingress"
-  network = "VPC Name" #google_compute_network.default.name
+  network = "tf-vpc-453017" #google_compute_network.default.name
 
   allow {
     protocol = "tcp"
